@@ -1,1 +1,2 @@
-// import  from './modules/.js';
+import "./modules/rightside.js"
+import "./modules/carousel.js"

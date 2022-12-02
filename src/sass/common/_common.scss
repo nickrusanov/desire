@@ -1,0 +1,47 @@
+body {
+	min-height: 100%;
+	min-width: 320px;
+	overflow-x: hidden;
+
+	display: flex;
+	flex-direction: column;
+
+	font: 16px/27px $text-font, sans-serif;
+	color: $color-text;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	li {
+		margin: 0 15px;
+
+		&.slick-active {
+			button {
+				background-color: #ffef35;
+			}
+		}
+	}
+
+	button {
+		width: 8px;
+		height: 8px;
+
+		background-color: $color-primary;
+		border-radius: 50%;
+
+		font-size: 0;
+	}
+}
