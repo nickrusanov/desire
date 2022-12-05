@@ -1,0 +1,5 @@
+@mixin line ($max-width) {
+	@extend %title-line;
+
+	max-width: $max-width;
+}

@@ -3,3 +3,13 @@
 	font-weight: 700;
 	color: $color-primary;
 }
+
+%title-line {
+	content: '';
+	height: 1px;
+	width: 100%;
+
+	position: absolute;
+
+	background-color: #979797;
+}

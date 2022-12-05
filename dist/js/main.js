@@ -1,1 +1,0 @@
-(()=>{"use strict";$((function(){$(".header__btn").on("click",(()=>{$(".rightside-menu").removeClass("rightside-menu--close")})),$(".rightside-menu__close").on("click",(()=>{$(".rightside-menu").addClass("rightside-menu--close")}))})),$((function(){$(".main-slider__slider").slick({dots:!0,arrows:!1,fade:!0,autoplay:!0})}))})();
