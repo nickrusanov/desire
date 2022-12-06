@@ -57,3 +57,35 @@
 	background-color: #ffee3580;
 	border: 1px solid #ffee3580;
 }
+
+/* BREADCRUMBS
+============================ */
+
+.breadcrumbs {
+	background: rgba(223, 223, 223, 0.5);
+
+	&__list {
+		display: flex;
+		padding: 14px 0;
+	}
+
+	&__link {
+		display: inline-block;
+		color: inherit;
+		font-size: 14px;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__item:not(:last-child)::after {
+		position: absolute;
+
+		content: '/';
+	}
+}
