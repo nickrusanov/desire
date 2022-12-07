@@ -12,12 +12,6 @@
 		align-items: center;
 	}
 
-	&__breadcrumbs {
-		width: 100%;
-		position: absolute;
-		top: 0;
-	}
-
 	&__banner-title {
 		@extend %title;
 		font-size: 60px;

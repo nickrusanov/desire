@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include('./chunk/head.html', {"title": ""})
+@@include('./chunk/head.html', {"title": "Blog"})
 
 <body>
-	@@include('./chunk/header.html', {"page": ""})
+	@@include('./chunk/header.html', {"page": "blog"})
 
-	<main class="main">
-		<div class="breadcrumbs">
+	<main class="blog">
+		<div class="breadcrumbs blog__breadcrumbs">
 			<div class="container">
 				<ul class="breadcrumbs__list">
 					<li class="breadcrumbs__item">
@@ -15,11 +15,22 @@
 					</li>
 
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="page.html">Page</a>
+						<a class="breadcrumbs__link" href="page.html">Blog</a>
 					</li>
 				</ul>
 			</div>
 		</div>
+		
+		<div class="blog__content">
+			<div class="blog__posts">
+				
+			</div>
+			<aside class="blog__aside">
+
+			</aside>
+		</div>
+
+		
 	</main>
 
 	@@include('./chunk/footer.html')
