@@ -20,17 +20,111 @@
 				</ul>
 			</div>
 		</div>
-		
-		<div class="blog__content">
-			<div class="blog__posts">
-				
-			</div>
-			<aside class="blog__aside">
 
-			</aside>
+		<div class="container">
+			<div class="blog__content">
+				<div class="blog__posts">
+					<div class="blog__post">
+						<img class="blog__post-img" src="./img/blog/blog-img1.jpg" alt="image">
+						<div class="blog__post-links">
+							<time class="blog__post-date" datetime="2020-08-15">
+								August 15, 2020 |
+							</time>
+							<a class="blog__link-text" href="#">by Ann Summers</a>
+							<span> | </span>
+							<a class="blog__link-text" href="#">Bedroom Furniture</a>
+						</div>
+
+						<a class="blog__link-title" href="#">
+							<h3 class="blog__post-title">Red selfies edison bulb four dollar toast humblebrag for the furniture
+							</h3>
+						</a>
+						<p class="blog__post-text">
+							Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally
+							williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug
+							selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst
+							enamel
+							pin edison bulb farm-to-table
+						</p>
+					</div>
+
+					<blockquote class="blog__blockquote">
+						<div class="blog__blockquote-cite">
+							“Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+						</div>
+						<div class="blog__blockquote-author">Paul Rand</div>
+					</blockquote>
+
+
+					<div class="blog__post">
+						<div class="blog__post-video">
+							<a class="blog__post-video-link" data-fancybox href="https://youtu.be/pgffXMrVaAw">
+								<img class="about__post-video-btn" src="./img/play-button.svg" alt="play">
+							</a>
+						</div>
+
+						<div class="blog__post-links">
+							<time class="blog__post-date" datetime="2020-08-12">
+								August 12, 2020 |
+							</time>
+							<a class="blog__link-text" href="#">by Lux Morningstar</a>
+							<span> | </span>
+							<a class="blog__link-text" href="#">Design</a>
+						</div>
+						<a class="blog__link-title" href="#">
+							<h3 class="blog__post-title">Authentic kogi shabby chic</h3>
+						</a>
+					</div>
+
+					<div class="blog__post">
+						<div class="blog__post-slider">
+							<img class="blog__post-img-slider" src="./img/blog/blog-img3.jpg" alt="image">
+							<img class="blog__post-img-slider" src="./img/blog/blog-img2.jpg" alt="image">
+							<img class="blog__post-img-slider" src="./img/blog/blog-img1.jpg" alt="image">
+						</div>
+						<div class="blog__post-links">
+							<time class="blog__post-date" datetime="2020-08-18">
+								August 18, 2020 |
+							</time>
+							<a class="blog__link-text" href="#">by Ann Summers</a>
+							<span> | </span>
+							<a class="blog__link-text" href="#">Table Furniture</a>
+						</div>
+
+						<a class="blog__link-title" href="#">
+							<h3 class="blog__post-title">Semiotics fixie four dollar toast, next level woke</h3>
+						</a>
+						<p class="blog__post-text">
+							Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. Literally
+							williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper mug iPhone enamel pin pug
+							selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst
+							enamel pin edison bulb farm-to-table
+						</p>
+					</div>
+
+					<div class="pagination pagination__list">
+						<a class="pagination__link pagination__link--disable" href="#">
+							<img class="pagination__link-img" src="./img/arrow-prev.svg" alt="arrow">
+						</a>
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a class="pagination__list-num pagination__list-num--active" href="#">1</a>
+							</li>
+							<li class="pagination__item">
+								<a class="pagination__list-num" href="#">2</a>
+							</li>
+						</ul>
+						<a class="pagination__link" href="#">
+							<img class="pagination__link-img" src="./img/arrow-next.svg" alt="arrow">
+						</a>
+					</div>
+
+				</div>
+				@@include('./chunk/aside.html')
+			</div>
 		</div>
 
-		
+
 	</main>
 
 	@@include('./chunk/footer.html')

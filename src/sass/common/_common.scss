@@ -51,3 +51,23 @@ main {
 		font-size: 0;
 	}
 }
+
+.slick-arrow {
+	height: 17px;
+	width: 10px;
+
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 1;
+}
+
+.slick-arrow--prev {
+	left: 16px;
+	background: center / cover no-repeat url("../img/slider-arrow-prev.png");
+}
+
+.slick-arrow--next {
+	right: 16px;
+	background: center / cover no-repeat url("../img/slider-arrow-next.png");
+}
