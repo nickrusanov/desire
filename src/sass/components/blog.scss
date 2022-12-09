@@ -1,0 +1,174 @@
+.blog {
+	&__breadcrumbs {
+		margin-bottom: 60px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__posts {
+		max-width: 730px;
+	}
+
+	&__post-img {
+		margin-bottom: 25px;
+	}
+
+	&__post-links {
+		margin-bottom: 10px;
+
+		font-weight: 600;
+		font-size: 14px;
+		color: $color-social;
+	}
+
+	&__link-text {
+		color: inherit;
+	}
+
+	&__link-title {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	&__post-title {
+		@extend %title;
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+	&__post {
+		margin-bottom: 90px;
+	}
+
+	&__blockquote {
+		min-height: 250px;
+		margin-bottom: 50px;
+		padding: 20px;
+
+		background-color: rgba(#dfdfdf, 0.5);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__blockquote-cite {
+		margin-bottom: 50px;
+		max-width: 600px;
+
+		text-align: center;
+		font: italic 300 24px/38px $text-font;
+
+		position: relative;
+
+		&::after {
+			@include line(200px);
+			bottom: -25px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+
+	&__blockquote-author {
+		@extend %title;
+	}
+
+	&__post-video {
+		height: 415px;
+		width: 100%;
+		margin-bottom: 25px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background: center / cover no-repeat url("../img/blog/blog-img2.jpg");
+	}
+
+	&__post-slider {
+		position: relative;
+	}
+}
+
+.pagination {
+	margin-bottom: 60px;
+
+	display: flex;
+	justify-content: center;
+
+	&__list {
+		display: flex;
+	}
+
+	&__list-num {
+		font-weight: 600;
+		font-size: 14px;
+		color: $color-social;
+	}
+
+	&__item {
+		margin: 0 6px;
+	}
+
+	&__list-num--active {
+		color: $color-primary;
+	}
+
+	&__link {
+		margin: 0 6px;
+	}
+
+	&__link--disable {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+.blog-post {
+	&__post-title {
+		@extend %title;
+		font-size: 28px;
+		line-height: 38px;
+	}
+
+	&__blockquote {
+		margin-bottom: 30px;
+		padding: 0 42px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__blockquote-cite {
+		margin-bottom: 50px;
+		max-width: 650px;
+
+		font: italic 300 24px/38px $text-font;
+
+		position: relative;
+
+		&::after {
+			@include line(200px);
+			bottom: -25px;
+			left: 0;
+		}
+	}
+
+	&__blockquote-author {
+		@extend %title;
+	}
+
+	&__post-text {
+		margin-bottom: 40px;
+	}
+
+	&__post {
+		max-width: 730px;
+	}
+}

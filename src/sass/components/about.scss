@@ -1,0 +1,185 @@
+.about {
+	&__banner {
+		height: 400px;
+		margin-bottom: 130px;
+
+		background: center / cover no-repeat url("../img/about-banner.jpg");
+
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__banner-title {
+		@extend %title;
+		font-size: 60px;
+		line-height: 80px;
+	}
+
+	&__content {
+		padding-bottom: 70px;
+	}
+
+	&__content-title {
+		max-width: 822px;
+		margin-bottom: 45px;
+
+		@extend %title;
+		font-size: 36px;
+		line-height: 60px;
+
+		position: relative;
+
+		&::after {
+			@include line(200px);
+
+			height: 2px;
+
+			bottom: -26px;
+			left: 0;
+		}
+	}
+
+	&__content-text {
+		margin: 0 0 27px auto;
+		max-width: 825px;
+	}
+
+	&__video {
+		margin-bottom: 100px;
+		height: 414px;
+		background: center / cover no-repeat url("../img/preview.jpg");
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__details {
+		margin-bottom: 10px;
+
+		position: relative;
+	}
+
+	&__details-img {
+		position: absolute;
+		bottom: 0;
+
+		min-height: 366px;
+		object-fit: cover;
+	}
+
+	&__details-content {
+		max-width: 825px;
+		margin-left: auto;
+		margin-right: 0;
+
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 400px;
+			height: 500px;
+
+			position: absolute;
+			bottom: 0;
+			left: -450px;
+
+			background: center / contain no-repeat url("../img/details-chair.png");
+		}
+	}
+
+	&__details-title {
+		margin-bottom: 40px;
+
+		@extend %title;
+		font-size: 36px;
+		line-height: 60px;
+
+		position: relative;
+
+		&::after {
+			@include line(200px);
+
+			height: 2px;
+
+			bottom: -15px;
+			left: 0;
+		}
+	}
+
+	&__details-text {
+		margin-bottom: 30px;
+	}
+
+	&__progressbar {
+		padding-bottom: 40px;
+		border-collapse: separate;
+		border-spacing: 0px 50px;
+	}
+
+	&__progressbar-row {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			bottom: -18px;
+			left: 0;
+
+			content: "";
+			height: 2px;
+			width: 100%;
+
+			border-radius: 1px;
+			background-color: white;
+		}
+
+		&::after {
+			position: absolute;
+			bottom: -18px;
+			left: 0;
+
+			content: "";
+			height: 2px;
+
+			border-radius: 1px;
+			background-color: $color-primary;
+		}
+
+		&--line80::after {
+			width: 80%;
+		}
+
+		&--line70::after {
+			width: 70%;
+		}
+
+		&--line75::after {
+			width: 75%;
+		}
+
+		&--line40::after {
+			width: 40%;
+		}
+	}
+
+	&__progressbar-item {
+		width: 100%;
+
+		@extend %title;
+		line-height: 23px;
+	}
+
+	&__partners-inner {
+		margin: 0 20px 69px;
+		display: flex;
+		justify-content: space-between;
+		gap: 20px
+	}
+
+	&__collection {
+		margin-bottom: 72px;
+	}
+}
