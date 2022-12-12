@@ -50,6 +50,15 @@
 
 		position: relative;
 
+		&:hover {
+			text-shadow: 1px 1px 1px $color-accent;
+		}
+
+		&--active:hover {
+			text-shadow: none;
+			cursor: default;
+		}
+
 		&--active::after {
 			content: "";
 			width: 100%;

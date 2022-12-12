@@ -27,6 +27,16 @@
 
 		border: 1px solid #45464750;
 		border-radius: 20px;
+
+		transition: all .2s ease;
+
+		&:hover {
+			background-color: rgba($color-accent, .1);
+		}
+
+		&:active {
+			transform: scale(.9);
+		}
 	}
 
 	&__items {
@@ -56,6 +66,15 @@
 	color: $color-primary;
 	background-color: #ffee3580;
 	border: 1px solid #ffee3580;
+
+	&:hover {
+		background-color: #ffee3580;
+		cursor: default;
+	}
+
+	&:active {
+		transform: scale(1);
+	}
 }
 
 /* BREADCRUMBS
