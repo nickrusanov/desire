@@ -1,6 +1,6 @@
 body {
 	min-height: 100%;
-	min-width: 320px;
+	min-width: 290px;
 	overflow-x: hidden;
 
 	display: flex;
@@ -70,4 +70,12 @@ main {
 .slick-arrow--next {
 	right: 16px;
 	background: center / cover no-repeat url("../img/slider-arrow-next.png");
+}
+
+@media (max-width: 540px) {
+	.slick-dots {
+		& li {
+			margin: 0 6px;
+		}
+	}
 }
