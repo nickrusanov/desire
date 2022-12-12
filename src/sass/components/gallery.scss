@@ -3,3 +3,15 @@
 		margin-bottom: 150px;
 	}
 }
+
+
+/* MEDIA
+============================ */
+
+@media(max-width: 768px) {
+	.main-gallery {
+		&__gallery {
+			margin-bottom: 60px;
+		}
+	}
+}

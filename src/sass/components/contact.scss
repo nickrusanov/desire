@@ -144,18 +144,11 @@
 	&__form-btn {
 		height: 40px;
 		width: 100%;
-		max-width: 180px;
+		max-width: 175px;
 
 		background: $color-primary;
 		color: #fffff0;
 		border-radius: 20px;
-	}
-
-	&__slider-item-inner {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 10px;
 	}
 
 	&__slider {
@@ -163,7 +156,15 @@
 	}
 
 	&__slider-link {
+		padding: 0 5px;
 		position: relative;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
 
 	&__slider-link:hover &__slider-info {
@@ -171,7 +172,17 @@
 		background-color: rgba(white, 0.6);
 	}
 
+	&__slider-img,
+	&__slider-link picture {
+		height: 100%;
+		max-height: 185px;
+		width: 100%;
+		object-fit: cover;
+	}
+
 	&__slider-info {
+		padding: 0 5px;
+
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -179,9 +190,10 @@
 		right: 0;
 
 		opacity: 0;
-		transition: all .3s ease;
+		transition: all 0.3s ease;
 
 		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
 
@@ -189,5 +201,32 @@
 		text-align: center;
 		@extend %title;
 		line-height: 22px;
+	}
+}
+
+/* MEDIA
+============================ */
+
+@media (max-width: 768px) {
+	.contact__banner {
+		iframe {
+			height: 380px;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+	.contact__inputs {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 540px) {
+	.contact__slider-link {
+		padding: 0;
+	}
+
+	.contact__slider-info {
+		padding: 0;
 	}
 }
