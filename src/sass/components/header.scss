@@ -51,11 +51,11 @@
 		position: relative;
 
 		&:hover {
-			text-shadow: 1px 1px 1px $color-accent;
+			background-color: #ffee3580;
 		}
 
 		&--active:hover {
-			text-shadow: none;
+			background-color: #fff;
 			cursor: default;
 		}
 

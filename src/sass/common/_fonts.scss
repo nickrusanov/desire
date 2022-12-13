@@ -8,7 +8,7 @@
 	}
 }
 
-@include font-face($title-font, "#{$fonts-root}Montserrat-Bold", "normal", 700);
-@include font-face($text-font, "#{$fonts-root}OpenSans-LightItalic", "italic", 300);
-@include font-face($text-font, "#{$fonts-root}OpenSans-Regular", "normal", 400);
-@include font-face($text-font, "#{$fonts-root}OpenSans-SemiBold", "normal", 600);
+@include font-face($title-font, "#{$fonts-root}Montserrat-Bold", normal, 700);
+@include font-face($text-font, "#{$fonts-root}OpenSans-LightItalic", italic, 300);
+@include font-face($text-font, "#{$fonts-root}OpenSans-Regular", normal, 400);
+@include font-face($text-font, "#{$fonts-root}OpenSans-SemiBold", normal, 600);

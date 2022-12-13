@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-style: "normal";
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/OpenSans-LightItalic.woff") format("woff");
-  font-style: "italic";
+  font-style: italic;
   font-weight: 300;
   font-display: swap;
 }
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-style: "normal";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
-  font-style: "normal";
+  font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
@@ -683,7 +683,18 @@ main {
 }
 
 .blog__link-text {
+  position: relative;
   color: inherit;
+}
+
+.blog__link-text:hover:before {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(54, 56, 56, 0.5);
 }
 
 .blog__link-title {
@@ -953,6 +964,17 @@ main {
   display: inline-block;
   color: inherit;
   font-size: 14px;
+  position: relative;
+}
+
+.breadcrumbs__link:hover:after {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(54, 56, 56, 0.5);
 }
 
 .breadcrumbs__item {
@@ -973,6 +995,11 @@ main {
 
 .contact__banner {
   margin-bottom: 55px;
+}
+
+.contact__banner iframe {
+  width: 100%;
+  height: 580px;
 }
 
 .contact__content {
@@ -1027,6 +1054,9 @@ main {
   position: absolute;
   left: 0px;
   top: 2px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact__social-link--facebook::before {
@@ -1049,13 +1079,19 @@ main {
   background: center/contain no-repeat url("../img/social/youtube.svg");
 }
 
+.contact__social-link:hover::before {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .contact__contacts-link {
+  position: relative;
   display: inline-block;
   margin-bottom: 24px;
   padding-left: 30px;
   font-weight: 600;
   color: #363838;
-  position: relative;
 }
 
 .contact__contacts-link::before {
@@ -1134,15 +1170,15 @@ main {
 }
 
 .contact__slider-link {
-  padding: 0 5px;
-  position: relative;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  padding: 0 5px;
+  position: relative;
 }
 
 .contact__slider-link:not(:last-child) {
@@ -1293,6 +1329,18 @@ main {
   margin-bottom: 15px;
 }
 
+.footer__social-item {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer__social-item:hover {
+  -webkit-transform: scale(1.1) translateX(7px);
+      -ms-transform: scale(1.1) translateX(7px);
+          transform: scale(1.1) translateX(7px);
+}
+
 .footer__social-link {
   padding-left: 28px;
   position: relative;
@@ -1332,6 +1380,20 @@ main {
   font-size: 14px;
   font-weight: 600;
   color: #707070;
+}
+
+.footer__menu-link {
+  position: relative;
+}
+
+.footer__menu-link:hover:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(54, 56, 56, 0.5);
 }
 
 .footer__menu {
@@ -1414,11 +1476,11 @@ main {
 }
 
 .menu__link:hover {
-  text-shadow: 1px 1px 1px #FFEF35;
+  background-color: rgba(255, 238, 53, 0.5019607843);
 }
 
 .menu__link--active:hover {
-  text-shadow: none;
+  background-color: #fff;
   cursor: default;
 }
 
